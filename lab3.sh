@@ -23,7 +23,7 @@ res=$(find $use -type f -name '*.rec' -readable) #variable that contains all rea
 				echo "$res"
 			elif test $command = "quit" || test $command = "q"  #if command is "quit", exits
 			then
-				exit
+				exit #git comment
 			else
 				echo "Unrecognized command!" #if command is neither quit or list, it alerts the user and asks again
 			fi

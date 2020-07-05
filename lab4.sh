@@ -37,7 +37,7 @@ indexplus1=`expr $index + 1`
 					filename=$(grep "$iminusone" <<< $colist | cut -d ':' -f $i)
 					if test $i -lt $indexplus1
 					then
-						filename=$(cut -d $i -f 1 <<< $filename)
+						filename=$(cut -d $i -f 1 <<< $filename)#extra git comment
 					fi
 					cooutput=$(grep -i 'COURSE' $filename | cut -d ':' -f 2 | sed -e 's/^\s*//g' -e 's/\s*$//g')
 					credits=$(grep -i 'credit' $filename | cut -d ':' -f 2 | sed -e 's/^\s*//g')
